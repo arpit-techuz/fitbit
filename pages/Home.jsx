@@ -4,6 +4,9 @@ import Navigation from "../components/Navigation"
 import carousel1 from '../public/img/carousel-1.jpg'
 import carousel2 from '../public/img/carousel-2.jpg'
 import ProgramSection from "../components/ProgramSection"
+import StatsSection from "../components/StatusData"
+import Trainer from "../components/Trainer"
+import TestimonialSection from "../components/Testimonial"
 function Home() {
     return (
         <div>
@@ -87,6 +90,12 @@ function Home() {
             </div>
 
             <ProgramSection />
+
+            <StatsSection />
+
+            <Trainer />
+
+            <TestimonialSection />
 
             <Footer />
         </div>
