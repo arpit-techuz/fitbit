@@ -3,6 +3,7 @@ import Footer from "../components/Footer"
 import Navigation from "../components/Navigation"
 import carousel1 from '../public/img/carousel-1.jpg'
 import carousel2 from '../public/img/carousel-2.jpg'
+
 function Home() {
     return (
         <div>
