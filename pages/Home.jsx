@@ -3,7 +3,7 @@ import Footer from "../components/Footer"
 import Navigation from "../components/Navigation"
 import carousel1 from '../public/img/carousel-1.jpg'
 import carousel2 from '../public/img/carousel-2.jpg'
-
+import ProgramSection from "../components/ProgramSection"
 function Home() {
     return (
         <div>
@@ -49,6 +49,7 @@ function Home() {
                 </div>
             </div>
 
+
             <div className="container-fluid p-5">
                 <div className="row gx-5">
                     <div className="col-lg-5 mb-5 mb-lg-0" style={{ minHeight: '500px' }}>
@@ -84,6 +85,9 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <ProgramSection />
+
             <Footer />
         </div>
     )
