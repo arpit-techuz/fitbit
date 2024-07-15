@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const blogData = [
   {
@@ -53,9 +54,9 @@ const BlogSection = () => {
                   <h6 className="text-light text-uppercase mb-0">{blog.date.month}</h6>
                   <span>{blog.date.year}</span>
                 </div>
-                <a className="h5 text-uppercase text-light" href="">
+                <Link className="h5 text-uppercase text-light" to="">
                   {blog.title}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

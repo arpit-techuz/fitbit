@@ -4,6 +4,11 @@ import Navigation from "../components/Navigation"
 import carousel1 from '../public/img/carousel-1.jpg'
 import carousel2 from '../public/img/carousel-2.jpg'
 import ProgramSection from "../components/ProgramSection"
+import StatsSection from "../components/StatusData"
+import Trainer from "../components/Trainer"
+import TestimonialSection from "../components/Testimonial"
+import BlogSection from "../components/BlogSection"
+import ClassSchedule from "../components/ClassSchedule"
 function Home() {
     return (
         <div>
@@ -85,9 +90,12 @@ function Home() {
                     </div>
                 </div>
             </div>
-
             <ProgramSection />
-
+            <ClassSchedule />
+            <StatsSection />
+            <Trainer />
+            <TestimonialSection />
+            <BlogSection />
             <Footer />
         </div>
     )
