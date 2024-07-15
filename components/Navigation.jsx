@@ -53,7 +53,7 @@ const Navigation = () => {
                                 <Link to="/" className="nav-item nav-link active">Home</Link>
                                 <Link to="/about" className="nav-item nav-link">About</Link>
                                 <Link to="/class" className="nav-item nav-link">Classes</Link>
-                                <Link to="/team" className="nav-item nav-link">Trainers</Link>
+                                <Link to="/trainers" className="nav-item nav-link">Trainers</Link>
                                 <div className="nav-item dropdown">
                                     <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</Link>
                                     <div className="dropdown-menu rounded-0 m-0">
