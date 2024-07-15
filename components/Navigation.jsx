@@ -1,73 +1,75 @@
-function Navigation() {
+import { Link } from "react-router-dom"
+
+const Navigation = () => {
     return (
-        <div class="container-fluid bg-dark px-0">
-        <div class="row gx-0">
-            <div class="col-lg-3 bg-dark d-none d-lg-block">
-                <a href="index.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-primary text-uppercase">Gymster</h1>
-                </a>
-            </div>
-            <div class="col-lg-9">
-                <div class="row gx-0 bg-secondary d-none d-lg-flex">
-                    <div class="col-lg-7 px-5 text-start">
-                        <div class="h-100 d-inline-flex align-items-center py-2 me-4">
-                            <i class="fa fa-envelope text-primary me-2"></i>
-                            <h6 class="mb-0">info@example.com</h6>
-                        </div>
-                        <div class="h-100 d-inline-flex align-items-center py-2">
-                            <i class="fa fa-phone-alt text-primary me-2"></i>
-                            <h6 class="mb-0">+012 345 6789</h6>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 px-5 text-end">
-                        <div class="d-inline-flex align-items-center py-2">
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle me-2" href="">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="btn btn-light btn-square rounded-circle" href="">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </div>
-                    </div>
+        <div className="container-fluid bg-dark px-0">
+            <div className="row gx-0">
+                <div className="col-lg-3 bg-dark d-none d-lg-block">
+                    <Link to="/" className="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+                        <h1 className="m-0 display-4 text-primary text-uppercase">Gymster</h1>
+                    </Link>
                 </div>
-                <nav class="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
-                    <a href="index.html" class="navbar-brand d-block d-lg-none">
-                        <h1 class="m-0 display-4 text-primary text-uppercase">Gymster</h1>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                        <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Home</a>
-                            <a href="about.html" class="nav-item nav-link">About</a>
-                            <a href="class.html" class="nav-item nav-link">Classes</a>
-                            <a href="team.html" class="nav-item nav-link">Trainers</a>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                    <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                                    <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                </div>
+                <div className="col-lg-9">
+                    <div className="row gx-0 bg-secondary d-none d-lg-flex">
+                        <div className="col-lg-7 px-5 text-start">
+                            <div className="h-100 d-inline-flex align-items-center py-2 me-4">
+                                <i className="bi bi-envelope text-primary me-2"></i>
+                                <h6 className="mb-0">info@example.com</h6>
                             </div>
-                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                            <div className="h-100 d-inline-flex align-items-center py-2">
+                                <i className="bi bi-telephone text-primary me-2"></i>
+                                <h6 className="mb-0">+012 345 6789</h6>
+                            </div>
                         </div>
-                        <a href="" class="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Join Us</a>
+                        <div className="col-lg-5 px-5 text-end">
+                            <div className="d-inline-flex align-items-center py-2">
+                                <Link className="btn btn-light btn-square rounded-circle me-2" to="">
+                                    <i className="bi bi-facebook"></i>
+                                </Link>
+                                <Link className="btn btn-light btn-square rounded-circle me-2" to="">
+                                    <i className="bi bi-twitter"></i>
+                                </Link>
+                                <Link className="btn btn-light btn-square rounded-circle me-2" to="">
+                                    <i className="bi bi-linkedin"></i>
+                                </Link>
+                                <Link className="btn btn-light btn-square rounded-circle me-2" to="">
+                                    <i className="bi bi-instagram"></i>
+                                </Link>
+                                <Link className="btn btn-light btn-square rounded-circle" to="">
+                                    <i className="bi bi-youtube"></i>
+                                </Link>
+                            </div>
+                        </div>
                     </div>
-                </nav>
+                    <nav className="navbar navbar-expand-lg bg-dark navbar-dark p-3 p-lg-0 px-lg-5">
+                        <Link to="/" className="navbar-brand d-block d-lg-none">
+                            <h1 className="m-0 display-4 text-primary text-uppercase">Gymster</h1>
+                        </Link>
+                        <button type="button" className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span className="navbar-toggler-icon"></span>
+                        </button>
+                        <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div className="navbar-nav mr-auto py-0">
+                                <Link to="/" className="nav-item nav-link active">Home</Link>
+                                <Link to="/about" className="nav-item nav-link">About</Link>
+                                <Link to="/class" className="nav-item nav-link">Classes</Link>
+                                <Link to="/team" className="nav-item nav-link">Trainers</Link>
+                                <div className="nav-item dropdown">
+                                    <Link to="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</Link>
+                                    <div className="dropdown-menu rounded-0 m-0">
+                                        <Link to="/blog" className="dropdown-item">Blog Grid</Link>
+                                        <Link to="/detail" className="dropdown-item">Blog Detail</Link>
+                                        <Link to="/testimonial" className="dropdown-item">Testimonial</Link>
+                                    </div>
+                                </div>
+                                <Link to="/contact" className="nav-item nav-link">Contact</Link>
+                            </div>
+                            <Link to="" className="btn btn-primary py-md-3 px-md-5 d-none d-lg-block">Join Us</Link>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
-    </div>
     )
 }
 
