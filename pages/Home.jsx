@@ -19,7 +19,16 @@ function Home() {
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img className="w-100" src={carousel1} alt="First slide" />
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                                style={{
+                                    width: "100%",
+                                    left: "0",
+                                    right: "0",
+                                    bottom: "0",
+                                    top: "0",
+                                    // backgroundColor: "rgba(34, 36, 41, 0.8)",
+                                }}
+                            >
                                 <div className="p-3" style={{ maxWidth: '900px' }}>
                                     <h5 className="text-white text-uppercase">Best Gym Center</h5>
                                     <h1 className="display-2 text-white text-uppercase mb-md-4">Build Your Body Strong With Gymster</h1>
@@ -32,7 +41,14 @@ function Home() {
                         </div>
                         <div className="carousel-item ">
                             <img className="w-100" src={carousel2} alt="Second slide" />
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                                style={{
+                                    width: "100%",
+                                    left: "0",
+                                    right: "0",
+                                    bottom: "0",
+                                    top: "0",
+                                }}>
                                 <div className="p-3" style={{ maxWidth: '900px' }}>
                                     <h5 className="text-white text-uppercase">Best Gym Center</h5>
                                     <h1 className="display-2 text-white text-uppercase mb-md-4">Grow Your Strength With Our Trainers</h1>
