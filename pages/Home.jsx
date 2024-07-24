@@ -15,9 +15,9 @@ function Home() {
         <div>
             <Navigation />
             <div className="container-fluid p-0 mb-5">
-                <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
+                <div id="header-carousel" className="carousel slide" data-bs-ride="carousel">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
                             <img className="w-100" src={carousel1} alt="First slide" />
                             <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
                                 style={{
@@ -41,7 +41,7 @@ function Home() {
                         </div>
                         <div className="carousel-item ">
                             <img className="w-100" src={carousel2} alt="Second slide" />
-                            <div class="carousel-caption d-flex flex-column align-items-center justify-content-center"
+                            <div className="carousel-caption d-flex flex-column align-items-center justify-content-center"
                                 style={{
                                     width: "100%",
                                     left: "0",
